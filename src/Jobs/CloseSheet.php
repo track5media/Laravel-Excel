@@ -35,7 +35,7 @@ class CloseSheet implements ShouldQueue
     /**
      * @var int
      */
-    public $timeout = 60;
+    public $timeout = 1200;
 
     /**
      * @param  object  $sheetExport
@@ -49,7 +49,6 @@ class CloseSheet implements ShouldQueue
         $this->temporaryFile = $temporaryFile;
         $this->writerType    = $writerType;
         $this->sheetIndex    = $sheetIndex;
-        $this->timeout       = config('excel.exports.jobs_timeouts.close_sheet');
     }
 
     /**

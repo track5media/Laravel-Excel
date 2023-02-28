@@ -48,7 +48,7 @@ class AppendQueryToSheet implements ShouldQueue
     /**
      * @var int
      */
-    public $timeout = 60;
+    public $timeout = 1200;
 
     /**
      * @param  FromQuery  $sheetExport
@@ -72,7 +72,6 @@ class AppendQueryToSheet implements ShouldQueue
         $this->sheetIndex    = $sheetIndex;
         $this->page          = $page;
         $this->chunkSize     = $chunkSize;
-        $this->timeout       = config('excel.exports.jobs_timeouts.append_query_to_sheet');
     }
 
     /**

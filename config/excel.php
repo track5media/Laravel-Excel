@@ -71,19 +71,6 @@ return [
             'manager'        => '',
             'company'        => '',
         ],
-
-        /*
-        |--------------------------------------------------------------------------
-        | Jobs timeouts
-        |--------------------------------------------------------------------------
-        |
-        | Configure export jobs timeout properties values.
-        |
-        */
-        'jobs_timeouts' => [
-            'append_query_to_sheet' => 60,
-            'close_sheet' => 60,
-        ],
     ],
 
     'imports'            => [
