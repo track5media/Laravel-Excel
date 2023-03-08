@@ -36,6 +36,11 @@ class AppendViewToSheet implements ShouldQueue
     public $sheetExport;
 
     /**
+     * @var int
+     */
+    public $timeout = 60000;
+
+    /**
      * @param  FromView  $sheetExport
      * @param  TemporaryFile  $temporaryFile
      * @param  string  $writerType
